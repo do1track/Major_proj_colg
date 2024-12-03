@@ -175,7 +175,7 @@
     color: black; 
     z-index: 1000; 
 
-    animation: fadeOut 5s forwards;
+    animation: fadeOut 4s forwards;
     animation-delay: 0s; 
 }
 @keyframes fadeOut {
