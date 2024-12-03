@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.backpic {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://img.freepik.com/free-vector/phishing-account_23-2148539268.jpg?t=st=1732796461~exp=1732800061~hmac=7147dec72953162c57e6c5e78aa19419861d348039c659a21d443be71129ecbc&w=1060);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 39%;                        /* Adjusting as per requirement */
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: -200px;
+}
+
+.content h2 {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.form {
+    width: 250px;
+    height: 350px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    top: 260px;                         /* Adjusting as per requirement */
+    position: absolute;
+    left: 650px;
+    border-radius: 10px;
+    padding: 25px;                      /* changed from 30 to 25 */
+}
+
+.form h2 {
+    width: 250px;
+    height: 40px;
+    background: rgb(10, 194, 240);
+    border: none;
+    text-align: center;
+    margin-top: 2px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    border-top: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form h3 {
+    text-align: center;
+    background: rgb(185, 161, 161);
+    margin-top: 30px;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    width: 240px;
+    height: 40px;
+    background: rgb(10, 194, 240);
+    border: none;
+    margin-top: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;                       /* changed from white to black */
+    transition: 0.4s ease;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.btn a {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+ /* yo part chai aile ko lagi kam chalune dhanga le rakheko */
+ .result {
+    position: absolute; 
+    top: 282px;                                          /* Adjusting as per requirement */
+    right: -210px;                                       /* Adjusting as per requirement */
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: black; 
+    z-index: 1000; 
+
+    animation: fadeOut 3s forwards;
+    animation-delay: 0s; 
+}
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

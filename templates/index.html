@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Scan for Spam</title>
+</head>
+<body>
+    <div class="backpic"></div>
+    <div class="content">
+        <h1>Be aware of Phishing attempts! </h1>
+        <h2>Be a little suspicious And be even MORE VIGILANT. </h2>
+    </div>
+    <div class="form">
+        <h2>SCAN Here!</h2>
+        <form action="/predict" method="post">
+            <input type="email" name="email" placeholder="Enter Email Here">
+            <button class="btn" onclick="return false">Scan</button> 
+            <h3>  OR </h3>
+            <input type="text" name="mixedInput" placeholder="Enter Message Here" required>
+            <button class="btn" type="submit">Scan</button>
+        </form>
+
+        {% with messages = get_flashed_messages() %}            <!--Resolves form resubmission problem-->
+        {% if messages %}                                       <!--Resolves form resubmission problem-->
+        {% for message in messages %}                           <!--Resolves form resubmission problem-->
+        <div class="result" >{{ message }}</div>                <!--Resolves form resubmission problem-->
+        {% endfor %}                                            <!--Resolves form resubmission problem-->
+        {% endif %}                                             <!--Resolves form resubmission problem-->
+        {% endwith %}                                           <!--Resolves form resubmission problem-->
+
+     <!--   {% if prediction_text %}
+        <div class="result" >{{ prediction_text }}</div>
+        {% endif %}     -->
+    </div>
+</body>
+</html>
