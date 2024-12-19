@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template, redirect, url_for, f
 import pickle
 import numpy as np
 
-model_path = 'rf_model.pkl'
+model_path = 'mnb_model.pkl'
 vectorizer_path = 'vectorizer.pkl'
 
 with open(model_path, 'rb') as file:
